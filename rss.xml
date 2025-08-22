@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 20 Aug 2025 07:14:08 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[こんにちは。 github に blog サイトを用意しました。 テンプレートを利用して、ほぼ手を入れずに使います。 ちょっとした変更の 95%を Gemini Cli…]]></description><link>https://koto2730.github.io/2025/07/03/</link><guid isPermaLink="false">https://koto2730.github.io/2025/07/03/</guid><pubDate>Thu, 03 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;こんにちは。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 22 Aug 2025 22:58:53 GMT</lastBuildDate><item><title><![CDATA[New App Released: FlowCards]]></title><description><![CDATA[夏真っ盛りですね。 現在、Google Play Store にて新アプリ FlowCards…]]></description><link>https://koto2730.github.io/2025/08/23/</link><guid isPermaLink="false">https://koto2730.github.io/2025/08/23/</guid><pubDate>Sat, 23 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;夏真っ盛りですね。&lt;/p&gt;
+&lt;p&gt;現在、Google Play Store にて新アプリ FlowCards を公開審査中です。
+ブログのフッターにリンクを仕込んでいますが、今はまだ無効です。審査が通ればそのまま利用できるはずです。&lt;/p&gt;
+&lt;p&gt;今回は「車輪の再発明」を恐れずに、自分なりに作ってみました。
+あわせて GitHub 上に FlowCards のリポジトリも公開しました。&lt;/p&gt;
+&lt;p&gt;iOS 版については現在問題があり、まだ公開できていません。もし対応してプルリクエストを送ってくれる方がいたら嬉しいですが、現実的には難しいでしょうね。自分でもそのうち対応したいと思っています。&lt;/p&gt;
+&lt;p&gt;現時点では機能もまだ十分ではなく、既知の不具合も残っています。ですが、のんびり進めていくつもりです。&lt;/p&gt;
+&lt;p&gt;今回は &lt;strong&gt;生成AIツールを活用して開発&lt;/strong&gt; しました。ソースコードの大部分はAIに生成させており、私は一部修正や調整をした程度です。&lt;/p&gt;
+&lt;p&gt;実際に使ってみると「楽」といえば楽ですが、「誰でも簡単にできる」とは言い切れません。
+同じ対応を繰り返して不具合を再発させたり、修正の仕方を間違えて妙に人間臭い動きを見せたりします。&lt;/p&gt;
+&lt;p&gt;説明も一応してくれるのですが、「これで最後の修正です」と勝手に宣言したり、その後何も改善されていなかったりするのは日常茶飯事です。&lt;/p&gt;
+&lt;p&gt;ツール自体がまだ発展途上ということもあり、今後どう進化していくのかは未知数です。そこも含めて試行錯誤を楽しんでいます。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[こんにちは。 github に blog サイトを用意しました。 テンプレートを利用して、ほぼ手を入れずに使います。 ちょっとした変更の 95%を Gemini Cli…]]></description><link>https://koto2730.github.io/2025/07/03/</link><guid isPermaLink="false">https://koto2730.github.io/2025/07/03/</guid><pubDate>Thu, 03 Jul 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;こんにちは。&lt;/p&gt;
 &lt;p&gt;github に blog サイトを用意しました。&lt;/p&gt;
 &lt;p&gt;テンプレートを利用して、ほぼ手を入れずに使います。&lt;/p&gt;
 &lt;p&gt;ちょっとした変更の 95%を Gemini Cli とやり取りしていましたが、後半急に物分かりが悪くなって、自分でやった部分もあります。&lt;/p&gt;
