@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 22 Aug 2025 23:04:18 GMT</lastBuildDate><item><title><![CDATA[New App Released: FlowCards]]></title><description><![CDATA[夏真っ盛りですね。 現在、Google Play Store にて新アプリ FlowCards…]]></description><link>https://koto2730.github.io/2025/08/22/</link><guid isPermaLink="false">https://koto2730.github.io/2025/08/22/</guid><pubDate>Fri, 22 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;夏真っ盛りですね。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 04 Sep 2025 06:44:29 GMT</lastBuildDate><item><title><![CDATA[Revisiting the Past: PyMemo Repository Released]]></title><description><![CDATA[懐かしいコードの現代化 新しく公開リポジトリを追加しました。今回公開したのは pymemo というツールです。 これは約20年前に書いたPython2系のソースコードを、Python…]]></description><link>https://koto2730.github.io/2025/09/04/</link><guid isPermaLink="false">https://koto2730.github.io/2025/09/04/</guid><pubDate>Thu, 04 Sep 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;懐かしいコードの現代化&lt;/h2&gt;
+&lt;p&gt;新しく公開リポジトリを追加しました。今回公開したのは &lt;strong&gt;pymemo&lt;/strong&gt; というツールです。&lt;/p&gt;
+&lt;p&gt;これは約20年前に書いたPython2系のソースコードを、Python3で動作するように移植したものです。「アプリ内でリンクを自動生成して表示する」機能を実装していました。当時でもブラウザでは当たり前で、今となってはほとんどのアプリで当たり前の機能ですが、当時の自分がどうやって実装しているんだろうと、調べて工夫して作った思い出があります。&lt;/p&gt;
+&lt;h2&gt;技術的な価値について&lt;/h2&gt;
+&lt;p&gt;正直なところ、現在の技術水準から見ると価値は限定的です。しかし、過去のコードを完全に削除してしまうよりは、記録として残しておく意味があると考え、公開することにしました。&lt;/p&gt;
+&lt;h2&gt;動作環境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Windows&lt;/strong&gt;: 動作確認済み&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;その他のOS&lt;/strong&gt;: Python + Tcl/Tkの組み合わせのため、理論上は他の環境でも動作するはず&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;macOS&lt;/strong&gt;: 手元の環境ではtkinterのセットアップがうまくいかず、動作確認できていません&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;技術の進歩とともに、古いコードも新たな価値を見出すことがあります。興味のある方はぜひご覧ください。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[New App Released: FlowCards]]></title><description><![CDATA[夏真っ盛りですね。 現在、Google Play Store にて新アプリ FlowCards…]]></description><link>https://koto2730.github.io/2025/08/22/</link><guid isPermaLink="false">https://koto2730.github.io/2025/08/22/</guid><pubDate>Fri, 22 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;夏真っ盛りですね。&lt;/p&gt;
 &lt;p&gt;現在、Google Play Store にて新アプリ FlowCards を公開審査中です。
 ブログのフッターにリンクを仕込んでいますが、今はまだ無効です。審査が通ればそのまま利用できるはずです。&lt;/p&gt;
 &lt;p&gt;今回は「車輪の再発明」を恐れずに、自分なりに作ってみました。
