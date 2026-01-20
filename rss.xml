@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 03 Jan 2026 06:28:06 GMT</lastBuildDate><item><title><![CDATA[Released LocalNode 1.0.0 and Portfolio]]></title><description><![CDATA[あけましておめでとうございます。2026年がどんな年になるか楽しみですね。 LocalNode 1.0.0 をストアで公開しました(iOS/Android) Google Play Storeでは公開されました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 20 Jan 2026 23:35:08 GMT</lastBuildDate><item><title><![CDATA[FlowCards 2.4.0 Released - Bulk Card Registration Feature Added]]></title><description><![CDATA[こんにちは。koto2730です。 FlowCards 2.4.0 をリリースしました FlowCards 2.4.0 をリリースしました（iOS/Android対応）。 リリース状況： iOS（App Store）: 公開済み Android（Google Play Store…]]></description><link>https://koto2730.github.io/2026/01/21/</link><guid isPermaLink="false">https://koto2730.github.io/2026/01/21/</guid><pubDate>Wed, 21 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;こんにちは。koto2730です。&lt;/p&gt;
+&lt;h2&gt;FlowCards 2.4.0 をリリースしました&lt;/h2&gt;
+&lt;p&gt;FlowCards 2.4.0 をリリースしました（iOS/Android対応）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;リリース状況：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;iOS（App Store）&lt;/strong&gt;: 公開済み&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Android（Google Play Store）&lt;/strong&gt;: 審査中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;主な変更点&lt;/h3&gt;
+&lt;p&gt;今回のアップデートでは、以下の改善を行いました：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;一括カード登録機能を追加&lt;/strong&gt; - 初期セットアップ時に複数のカードをまとめて登録できるようになりました&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;細かい不具合の修正&lt;/strong&gt; - 使用に支障のない範囲で一部の不具合を修正&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;今回のメインアップデートは一括カード登録機能です。これまでカードを一枚ずつ登録する必要があり、使い始めが煩雑でしたが、この機能により大幅に改善されました。&lt;/p&gt;
+&lt;p&gt;なお、いくつか残っている軽微な不具合については、実使用に影響がないため、今後のバージョンで対応予定です。&lt;/p&gt;
+&lt;h2&gt;開発環境の変化：AIエージェントの切り替え&lt;/h2&gt;
+&lt;p&gt;今回の開発から、AIツールを &lt;strong&gt;gemini-cli&lt;/strong&gt; から &lt;strong&gt;Claude Code&lt;/strong&gt; に切り替えました。&lt;/p&gt;
+&lt;h3&gt;Claude Code の印象&lt;/h3&gt;
+&lt;p&gt;Claude Code の性能には非常に満足しています。すでにgemini-cliで構築されたコードベースに対して、今回の機能追加をスムーズに実装してくれました。&lt;/p&gt;
+&lt;p&gt;この結果を受けて、次のバージョン（2.5.0）では、リファクタリングとユニットテスト作成にも再び挑戦してみる予定です。&lt;/p&gt;
+&lt;h3&gt;補足：公平な比較のために&lt;/h3&gt;
+&lt;p&gt;gemini-cliを使用して苦労していたのは約半年前のことです。AI開発ツールの進化は著しいため、現在のClaudeと当時のGeminiを単純に比較することはできません。両ツールともそれぞれの時点で最良の選択肢だったと考えています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Released LocalNode 1.0.0 and Portfolio]]></title><description><![CDATA[あけましておめでとうございます。2026年がどんな年になるか楽しみですね。 LocalNode 1.0.0 をストアで公開しました(iOS/Android) Google Play Storeでは公開されました。
 App Store…]]></description><link>https://koto2730.github.io/2026/01/03/</link><guid isPermaLink="false">https://koto2730.github.io/2026/01/03/</guid><pubDate>Sat, 03 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;あけましておめでとうございます。2026年がどんな年になるか楽しみですね。&lt;/p&gt;
 &lt;h2&gt;LocalNode 1.0.0 をストアで公開しました(iOS/Android)&lt;/h2&gt;
 &lt;p&gt;Google Play Storeでは公開されました。
