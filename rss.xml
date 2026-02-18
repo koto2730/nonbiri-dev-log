@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 07 Feb 2026 10:58:27 GMT</lastBuildDate><item><title><![CDATA[LocalNode 1.1.0 Released]]></title><description><![CDATA[LocalNode 1.1.0 をリリースしました LocalNode 1.1.0 をリリースしました（iOS/Android対応）。 リリース状況： iOS（App Store）: 公開中 Android（Google Play Store）: 公開中 Windows…]]></description><link>https://koto2730.github.io/2026/02/08/</link><guid isPermaLink="false">https://koto2730.github.io/2026/02/08/</guid><pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;LocalNode 1.1.0 をリリースしました&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Feb 2026 02:21:55 GMT</lastBuildDate><item><title><![CDATA[LocalNode 1.1.1 Released]]></title><description><![CDATA[LocalNode v1.1.1をリリースしました 🎉 今回の更新内容と、いま把握している不具合をまとめておきます。 ストア審査状況 現在、Google Play（Android）とApp Store（iOS / macOS…]]></description><link>https://koto2730.github.io/2026/02/18/</link><guid isPermaLink="false">https://koto2730.github.io/2026/02/18/</guid><pubDate>Wed, 18 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;LocalNode v1.1.1をリリースしました 🎉&lt;/p&gt;
+&lt;p&gt;今回の更新内容と、いま把握している不具合をまとめておきます。&lt;/p&gt;
+&lt;h2&gt;ストア審査状況&lt;/h2&gt;
+&lt;p&gt;現在、Google Play（Android）とApp Store（iOS / macOS）に申請済みで、審査中です。
+承認され次第、各ストアからアップデートが配信されます。
+今回からAppleのストアではmacOS版も審査中で、公開予定です。&lt;/p&gt;
+&lt;h2&gt;GitHub Releases&lt;/h2&gt;
+&lt;p&gt;Windows / Linux（x64・ARM64）/ Android APK は、GitHubのリリースページからすぐにダウンロードできます。
+今回のリリースから、Linux（ARM64）版もGitHub Releasesに追加しています。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/koto2730/localnode/releases/tag/v1.1.1&quot;&gt;LocalNode v1.1.1 Release&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;v1.1.1の変更点&lt;/h2&gt;
+&lt;h3&gt;新機能&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;クリップボード共有時に、どの端末から送られたかわかるタグ（名前）が表示されるようになりました&lt;/li&gt;
+&lt;li&gt;サーバーを再起動した際に、ブラウザ側が自動的に再接続するようになりました&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;改善・修正&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;長いファイル名が画面からはみ出す問題を修正しました&lt;/li&gt;
+&lt;li&gt;iOSでのフォルダ設定の安定性を向上しました&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;確認されている不具合&lt;/h2&gt;
+&lt;p&gt;実機確認の中で、いくつか不具合を確認しています。
+次回以降のアップデートで順次対応していく予定です。&lt;/p&gt;
+&lt;h3&gt;iOS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;固定PIN入力後にキーボードでボタンが隠れ、サーバーを開始できない場合がある&lt;/li&gt;
+&lt;li&gt;他のモードから固定PINモードに戻すと、PINの状態が正しく復元されない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;macOS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;共有フォルダのピッカーが起動しない&lt;/li&gt;
+&lt;li&gt;初期フォルダがライブラリ配下になっており、DocumentsまたはDownloadsに変更予定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Linux x64（WSL）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;GUIモードでマルチバイト文字が豆腐（□）に化ける&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;CLI共通&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows：QRコードがスマホで読み取れない／キー入力が認識されない／Ctrl+Cの反応が悪い／終了後にターミナルの挙動がおかしくなる&lt;/li&gt;
+&lt;li&gt;Linux x64（WSL）：&lt;code class=&quot;language-text&quot;&gt;--cli&lt;/code&gt;モードで不要なウィンドウが開く&lt;/li&gt;
+&lt;li&gt;Linux ARM64（Raspberry Pi等）：&lt;code class=&quot;language-text&quot;&gt;--cli&lt;/code&gt;モードで「cannot open display」エラーが出る&lt;/li&gt;
+&lt;li&gt;macOS：QRコードに黒い線が入り読み取れない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;全体&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;サーバー停止時にIPアドレスの設定が初期値に戻ってしまう&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これらの不具合は今後のバージョンで修正を進めます。
+ご不便をおかけしますが、IssueやフィードバックをGitHubにいただけると助かります！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LocalNode 1.1.0 Released]]></title><description><![CDATA[LocalNode 1.1.0 をリリースしました LocalNode 1.1.0 をリリースしました（iOS/Android対応）。 リリース状況： iOS（App Store）: 公開中 Android（Google Play Store）: 公開中 Windows…]]></description><link>https://koto2730.github.io/2026/02/08/</link><guid isPermaLink="false">https://koto2730.github.io/2026/02/08/</guid><pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;LocalNode 1.1.0 をリリースしました&lt;/h2&gt;
 &lt;p&gt;LocalNode 1.1.0 をリリースしました（iOS/Android対応）。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;リリース状況：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
