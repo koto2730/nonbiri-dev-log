@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Feb 2026 02:21:55 GMT</lastBuildDate><item><title><![CDATA[LocalNode 1.1.1 Released]]></title><description><![CDATA[LocalNode v1.1.1をリリースしました 🎉 今回の更新内容と、いま把握している不具合をまとめておきます。 ストア審査状況 現在、Google Play（Android）とApp Store（iOS / macOS…]]></description><link>https://koto2730.github.io/2026/02/18/</link><guid isPermaLink="false">https://koto2730.github.io/2026/02/18/</guid><pubDate>Wed, 18 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;LocalNode v1.1.1をリリースしました 🎉&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 20 Feb 2026 06:20:58 GMT</lastBuildDate><item><title><![CDATA[LocalNode 1.1.2 Released]]></title><description><![CDATA[LocalNode v1.1.2をリリースしました。 v1.1.1を公開したものの、実機テストの段階から不具合が多く見つかっていたため、早めに修正対応を行いました。 ストア審査状況 Google Play（Android） 公開済み App Store（iOS / macOS…]]></description><link>https://koto2730.github.io/2026/02/20/</link><guid isPermaLink="false">https://koto2730.github.io/2026/02/20/</guid><pubDate>Fri, 20 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;LocalNode v1.1.2をリリースしました。&lt;/p&gt;
+&lt;p&gt;v1.1.1を公開したものの、実機テストの段階から不具合が多く見つかっていたため、早めに修正対応を行いました。&lt;/p&gt;
+&lt;h2&gt;ストア審査状況&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Play（Android） &lt;strong&gt;公開済み&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;App Store（iOS / macOS） &lt;strong&gt;審査中&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;承認され次第、各ストアからアップデートが配信されます。
+macOS版の1.1.1はストア側から指摘を受けたため、取り下げました。もともとv1.1.2の準備を進めていたこともあり、macOS版はv1.1.2からストア公開します。&lt;/p&gt;
+&lt;h2&gt;対応箇所&lt;/h2&gt;
+&lt;h4&gt;IPアドレスの選択が維持されるようになりました&lt;/h4&gt;
+&lt;p&gt;これまでは、サーバーを停止するたびに選択中のIPアドレスがリスト先頭に戻っていました。複数のネットワークインターフェースがある環境では毎回選び直しが必要で、地味に不便でした。v1.1.2からは、停止後も選択したIPが維持されます。&lt;/p&gt;
+&lt;h4&gt;ダウンロード専用モードでもクリップボードが使えるように&lt;/h4&gt;
+&lt;p&gt;ダウンロード専用モードは「ファイルのアップロードや削除を禁止する」ためのモードですが、クリップボード共有まで無効化されていました。今回の修正で、クリップボードはモードに関わらず常に使えるようになりました。&lt;/p&gt;
+&lt;h4&gt;macOS：フォルダピッカーが開かない問題を修正&lt;/h4&gt;
+&lt;p&gt;macOS版でフォルダを変更しようとしても、フォルダピッカーが開かない問題がありました。原因は、App Sandboxに必要なentitlement（&lt;code class=&quot;language-text&quot;&gt;com.apple.security.files.user-selected.read-write&lt;/code&gt;）が設定ファイルに含まれていなかったことです。&lt;code class=&quot;language-text&quot;&gt;NSOpenPanel&lt;/code&gt;はこのentitlementがないと動作しないため、今回追加しました。&lt;/p&gt;
+&lt;h4&gt;macOS：デフォルトの共有フォルダをDownloadsに変更&lt;/h4&gt;
+&lt;p&gt;これまでのデフォルト共有フォルダは&lt;code class=&quot;language-text&quot;&gt;~/Library/Containers/.../Documents/LocalNode&lt;/code&gt;というApp Sandbox内の深い場所にあり、Finderから見つけにくい状態でした。v1.1.2からは、ユーザーのDownloadsフォルダがデフォルトになります。&lt;/p&gt;
+&lt;h4&gt;iOS：固定PINまわりの使い勝手を改善&lt;/h4&gt;
+&lt;p&gt;固定PINモードで4桁を入力したあともキーボードが閉じず、スタートボタンが隠れてしまう問題がありました。さらに、一度別の認証モードに切り替えてから固定PINモードに戻すと、画面上はPINが表示されているのにサーバーが起動しない挙動もありました。どちらも今回修正しています。&lt;/p&gt;
+&lt;h4&gt;Windows / Linux CLI の安定性向上&lt;/h4&gt;
+&lt;p&gt;Windows版では、CLIモードでのIP選択時にキーボード入力が効かない、Ctrl+Cを何度も押さないと終了できない、終了後にターミナルの入力状態がおかしくなる、といった問題を修正しました。また、LinuxでCLIモードで起動したはずなのにGUIウィンドウが開いてしまう問題にも対応しています。&lt;/p&gt;
+&lt;p&gt;ただし、x64環境・ARM64環境ともに、現状はCLIモードで起動できません。
+スマホ版には影響がないためストア公開申請は進めていますが、GitHub ReleasesでのWindows/Linux版の公開は、この対応が完了してからにする予定です。
+Android APK版は機能的には関係ないのですが、Windows/Linuxの公開と同時にします。&lt;/p&gt;
+&lt;h3&gt;全体&lt;/h3&gt;
+&lt;p&gt;IssueやフィードバックをGitHubでいただけると助かります！&lt;/p&gt;
+&lt;h3&gt;余談&lt;/h3&gt;
+&lt;p&gt;リリース情報だけならAIに書いてもらったほうが早いのですが、それだけだと味気ない気もするので、少し余談を。&lt;/p&gt;
+&lt;p&gt;最近「AIを使って考える技術」を購入しました。悩みを解消したい、というよりは、ビジネス書として話題になっていたので気になった形です。
+Amazonでも単行本がベストセラー1位になっていましたし、業務でAIを使う日本のビジネスパーソンの基準の一つになるかもしれないと思い、目を通すことにしました。
+帯の「誰でも『頭のいい人』になれる」は少し言い過ぎだとは思いますが、頭の良い人が持っている知識や広い視点を、チャットを通じて手軽に得られるのは確かだと感じます。
+56の技法が載っているようで、アイデア発想本に近い印象です。分厚い本なので、ゆっくり読んでいこうと思います。
+アプリやシステム開発で、すぐ次の実装をしてくれる話とはまた別の話ですが、考え方の整理には役立ちそうです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LocalNode 1.1.1 Released]]></title><description><![CDATA[LocalNode v1.1.1をリリースしました 🎉 今回の更新内容と、いま把握している不具合をまとめておきます。 ストア審査状況 現在、Google Play（Android）とApp Store（iOS / macOS…]]></description><link>https://koto2730.github.io/2026/02/18/</link><guid isPermaLink="false">https://koto2730.github.io/2026/02/18/</guid><pubDate>Wed, 18 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;LocalNode v1.1.1をリリースしました 🎉&lt;/p&gt;
 &lt;p&gt;今回の更新内容と、いま把握している不具合をまとめておきます。&lt;/p&gt;
 &lt;h2&gt;ストア審査状況&lt;/h2&gt;
 &lt;p&gt;現在、Google Play（Android）とApp Store（iOS / macOS）に申請済みで、審査中です。
