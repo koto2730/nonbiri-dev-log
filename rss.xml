@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 20 Feb 2026 06:20:58 GMT</lastBuildDate><item><title><![CDATA[LocalNode 1.1.2 Released]]></title><description><![CDATA[LocalNode v1.1.2をリリースしました。 v1.1.1を公開したものの、実機テストの段階から不具合が多く見つかっていたため、早めに修正対応を行いました。 ストア審査状況 Google Play（Android） 公開済み App Store（iOS / macOS…]]></description><link>https://koto2730.github.io/2026/02/20/</link><guid isPermaLink="false">https://koto2730.github.io/2026/02/20/</guid><pubDate>Fri, 20 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;LocalNode v1.1.2をリリースしました。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Feb 2026 02:53:55 GMT</lastBuildDate><item><title><![CDATA[LocalNode 1.1.2 Released on GitHub]]></title><description><![CDATA[LocalNode 1.1.2 の GitHub Release を公開しました。 現在、以下の版をダウンロードできます。 Android APK版 Windows版 Linux x64版 Linux arm64版 なお、macOS…]]></description><link>https://koto2730.github.io/2026/02/23/</link><guid isPermaLink="false">https://koto2730.github.io/2026/02/23/</guid><pubDate>Mon, 23 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;LocalNode 1.1.2 の GitHub Release を公開しました。&lt;/p&gt;
+&lt;p&gt;現在、以下の版をダウンロードできます。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Android APK版&lt;/li&gt;
+&lt;li&gt;Windows版&lt;/li&gt;
+&lt;li&gt;Linux x64版&lt;/li&gt;
+&lt;li&gt;Linux arm64版&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;なお、macOS版のみ現在審査待ちです。&lt;/p&gt;
+&lt;p&gt;いくつか不具合は確認していますが、現時点では利用不能になるような重大なものはなさそうです。
+現在 Issue に上がっている内容は、次の 1.2.0 で対応予定です。&lt;/p&gt;
+&lt;p&gt;少し間を空けてから、1.2.0 の開発を進める予定です。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LocalNode 1.1.2 Released]]></title><description><![CDATA[LocalNode v1.1.2をリリースしました。 v1.1.1を公開したものの、実機テストの段階から不具合が多く見つかっていたため、早めに修正対応を行いました。 ストア審査状況 Google Play（Android） 公開済み App Store（iOS / macOS…]]></description><link>https://koto2730.github.io/2026/02/20/</link><guid isPermaLink="false">https://koto2730.github.io/2026/02/20/</guid><pubDate>Fri, 20 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;LocalNode v1.1.2をリリースしました。&lt;/p&gt;
 &lt;p&gt;v1.1.1を公開したものの、実機テストの段階から不具合が多く見つかっていたため、早めに修正対応を行いました。&lt;/p&gt;
 &lt;h2&gt;ストア審査状況&lt;/h2&gt;
 &lt;ul&gt;
