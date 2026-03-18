@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Feb 2026 02:53:55 GMT</lastBuildDate><item><title><![CDATA[LocalNode 1.1.2 Released on GitHub]]></title><description><![CDATA[LocalNode 1.1.2 の GitHub Release を公開しました。 現在、以下の版をダウンロードできます。 Android APK版 Windows版 Linux x64版 Linux arm64版 なお、macOS…]]></description><link>https://koto2730.github.io/2026/02/23/</link><guid isPermaLink="false">https://koto2730.github.io/2026/02/23/</guid><pubDate>Mon, 23 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;LocalNode 1.1.2 の GitHub Release を公開しました。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Mar 2026 02:23:56 GMT</lastBuildDate><item><title><![CDATA[LocalNode 1.2.0 Released]]></title><description><![CDATA[リリース内容 LocalNode バージョン 1.2.0 を公開しました。 配布状況: Windows / Linux (X86, Arm64) / Android (APK) → GitHub より即座にダウンロード可能 iOS / macOS → App Store…]]></description><link>https://koto2730.github.io/2026/03/18/</link><guid isPermaLink="false">https://koto2730.github.io/2026/03/18/</guid><pubDate>Wed, 18 Mar 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;リリース内容&lt;/h2&gt;
+&lt;p&gt;LocalNode バージョン 1.2.0 を公開しました。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;配布状況:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows / Linux (X86, Arm64) / Android (APK) → GitHub より即座にダウンロード可能&lt;/li&gt;
+&lt;li&gt;iOS / macOS → App Store 審査中（承認後に公開予定）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;小規模リリースの理由&lt;/h2&gt;
+&lt;p&gt;今回は小規模なリリースになってしまいました。以下の 2 つの機能を次回以降に持ち越したためです。&lt;/p&gt;
+&lt;h3&gt;i18n（多言語対応）&lt;/h3&gt;
+&lt;p&gt;機能追加が落ち着いてから取り組むので優先度は低めです。&lt;/p&gt;
+&lt;h3&gt;HTTPS 対応&lt;/h3&gt;
+&lt;p&gt;こちらは実現したかった機能ですが、技術的な課題があります。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;概要:&lt;/strong&gt;
+LocalNode はローカルネット（家庭内など）での利用を想定しており、基本的に IP アドレスでのアクセスを想定していました。HTTPS 対応にはいくつかの考慮点があります。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;課題:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SSL/TLS 証明書の利用にはホスト名ベースのアクセスが必須&lt;/li&gt;
+&lt;li&gt;IP アドレスでのアクセスも確保したいニーズがある&lt;/li&gt;
+&lt;li&gt;これらの両立の設計複雑性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;これらを勘案し、延期することを判断しました。&lt;/p&gt;
+&lt;h2&gt;AI 開発支援での経験&lt;/h2&gt;
+&lt;p&gt;HTTPS 対応を進める過程とその他の開発で、AI アシスタント（Claude）の課題を経験しました。&lt;/p&gt;
+&lt;h3&gt;OpenSSL の不要な前提&lt;/h3&gt;
+&lt;p&gt;Claude は設計段階では使う予定のなかった OpenSSL をさも必須であるかのように前提にして実装を進めました。事前相談もなく進められており、がっかりした部分です。&lt;/p&gt;
+&lt;h3&gt;ターミナルの「幻想的な作法」&lt;/h3&gt;
+&lt;p&gt;より深刻だったのはターミナル制御の実装です。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;経緯:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CLI モードでサーバの停止を &lt;code class=&quot;language-text&quot;&gt;Ctrl+C&lt;/code&gt; と &lt;code class=&quot;language-text&quot;&gt;q+Enter&lt;/code&gt; の 2 つのコマンドで実装&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;q+Enter&lt;/code&gt; という作法が何なのか疑問に感じたものの、Claude の提案なので採用&lt;/li&gt;
+&lt;li&gt;テストで多くの不具合が発生&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;問題の正体:&lt;/strong&gt;
+Claude に問い返すと、&lt;code class=&quot;language-text&quot;&gt;q+Enter&lt;/code&gt; は Claude が独自に「作った」コマンドで、実在しない作法だったことが判明しました。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 488px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/nonbiri-dev-log/static/fc74140cabcec23b869327ee69a88eeb/bd48c/image.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.10126582278481%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABt0lEQVR42oVS2W7bQAzUT9iWbMte3fe5OmIrclLDhYEgTv7/ayYk0zptgSIPxC6J4exwuEbbtoiiGGVRwjRNrFarb4Nx/wsjyzLEcSxh27bEbre73++1P+7r9fovEsuyvgj3+z04GPQvyXa7vT/AGM45uHG5XIpaPheLhZwm5YYfhjRyhLqukdDoTdOgbTSaukFTVWJHTBEGIdpWo+87pGmKIAgQ+L70TccJaRJjs9nAKMsSRVEQSYuu6/Dy8op5PmEYemoe0HcD8izFmsCOcuC4DhSp/RzdgnIc+H4glvDoBl+UUgRSiOIILjcQyHVdASq1pxFXQuAHPnzPE3vYhoCJ6OSc1Qnhw/iA8Vc8/3jC04nUkbLTPFN+xuXyE0VZ4fb2juv1iuPxSLULpumAcRiob5TJPBIghOyFQ4pYpW3vSEVIuUv3rSiNaPvsY5blooixbBHXeFGcMwerFML58VHUlaSiIYO11tCdxuFwwPl8xvvthqqqUdOC+r4nhROKvMAwDuAv57keLSRBnudIyDIjp2JFRAUVeHtpkiIhgNad1DV9fK7xpiP6EeyVSUp4IZb19Qd/nx/5hx/y9DZGRgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;alt text&quot;
+        title=&quot;&quot;
+        src=&quot;/nonbiri-dev-log/static/fc74140cabcec23b869327ee69a88eeb/bd48c/image.png&quot;
+        srcset=&quot;/nonbiri-dev-log/static/fc74140cabcec23b869327ee69a88eeb/c26ae/image.png 158w,
+/nonbiri-dev-log/static/fc74140cabcec23b869327ee69a88eeb/6bdcf/image.png 315w,
+/nonbiri-dev-log/static/fc74140cabcec23b869327ee69a88eeb/bd48c/image.png 488w&quot;
+        sizes=&quot;(max-width: 488px) 100vw, 488px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;根本的な疑問&lt;/h3&gt;
+&lt;p&gt;ターミナル制御は定型的で、学習データも豊富なはずなのに、なぜこのようなことが起きるのでしょうか？&lt;/p&gt;
+&lt;p&gt;LocalNode はマルチプラットフォーム対応ツール（Windows/macOS/Linux）であり、各 OS のターミナル制御の違いに対応することは、AI サポートの重要な価値だと期待していました。しかし、実際には不正な提案で足を引っ張られる結果になりました。&lt;/p&gt;
+&lt;h2&gt;AI ツールの一貫性の課題&lt;/h2&gt;
+&lt;p&gt;AIツール全般的な問題として、以下を感じています。&lt;/p&gt;
+&lt;p&gt;初期段階では「このインプットレベルでこのアウトプット品質なら使える」と判断します。しかし、同じレベルのインプットを与えても、次には全く別の（ときに無根拠な）アウトプットになることがあります。&lt;/p&gt;
+&lt;p&gt;これは単なるハルシネーションではなく、より根深い一貫性の問題のようです。AI の能力の不安定性をどう扱うか、今後の開発の課題の 1 つになりそうです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LocalNode 1.1.2 Released on GitHub]]></title><description><![CDATA[LocalNode 1.1.2 の GitHub Release を公開しました。 現在、以下の版をダウンロードできます。 Android APK版 Windows版 Linux x64版 Linux arm64版 なお、macOS…]]></description><link>https://koto2730.github.io/2026/02/23/</link><guid isPermaLink="false">https://koto2730.github.io/2026/02/23/</guid><pubDate>Mon, 23 Feb 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;LocalNode 1.1.2 の GitHub Release を公開しました。&lt;/p&gt;
 &lt;p&gt;現在、以下の版をダウンロードできます。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Android APK版&lt;/li&gt;
