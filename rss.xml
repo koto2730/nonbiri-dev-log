@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 23 Apr 2026 07:06:51 GMT</lastBuildDate><item><title><![CDATA[LocalNode 1.4.0]]></title><description><![CDATA[リリース内容 LocalNode 1.4.0 を公開しました。 今回のアップデートでは、フォルダ閲覧や画像表示まわりを中心に、日常的に使いやすくなる機能を追加しています。 配布状況 Android (APK/AAB): GitHub…]]></description><link>https://koto2730.github.io/2026/04/23/</link><guid isPermaLink="false">https://koto2730.github.io/2026/04/23/</guid><pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;リリース内容&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[のんびりDev-log RSS Feed]]></title><description><![CDATA[開発系の活動を残すためのブログ]]></description><link>https://koto2730.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 23 Apr 2026 07:08:13 GMT</lastBuildDate><item><title><![CDATA[LocalNode 1.4.0]]></title><description><![CDATA[リリース内容 LocalNode 1.4.0 を公開しました。 今回のアップデートでは、フォルダ閲覧や画像表示まわりを中心に、日常的に使いやすくなる機能を追加しています。 配布状況 Android (APK/AAB): GitHub…]]></description><link>https://koto2730.github.io/2026/04/23/</link><guid isPermaLink="false">https://koto2730.github.io/2026/04/23/</guid><pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;リリース内容&lt;/h2&gt;
 &lt;p&gt;LocalNode 1.4.0 を公開しました。&lt;/p&gt;
 &lt;p&gt;今回のアップデートでは、フォルダ閲覧や画像表示まわりを中心に、日常的に使いやすくなる機能を追加しています。&lt;/p&gt;
 &lt;h3&gt;配布状況&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Android (APK/AAB): GitHub からすぐにダウンロードできます。ストア版は審査中です。&lt;/li&gt;
+&lt;li&gt;Android (APK/AAB): GitHub からすぐにダウンロードできます。ストア版も公開されました。&lt;/li&gt;
 &lt;li&gt;iOS / macOS: App Store 審査中です。&lt;/li&gt;
 &lt;li&gt;Windows / Linux (x86/arm64): GitHub Releases からダウンロードできます。&lt;/li&gt;
 &lt;/ul&gt;
@@ -42,7 +42,7 @@
 &lt;p&gt;また、トークンを使うことで、ブラウザを介さず curl などから直接ファイルをアップロードすることも可能になっています。&lt;/p&gt;
 &lt;p&gt;これも使い方次第で、いろいろ面白いことができそうです。&lt;/p&gt;
 &lt;p&gt;次に LocalNode 1.5.0 で考えている機能もありますが、1.4.0 でいろいろな使い方が見えてきたので、少し間を空けるかもしれません。&lt;/p&gt;
-&lt;p&gt;早くても 5 月くらいになりそうです。&lt;/p&gt;
+&lt;p&gt;早くても 5 月の後半くらいになりそうです。&lt;/p&gt;
 &lt;p&gt;そろそろ、FlowCards と LocalNode に続く 3 つ目の新しいアプリのテーマも見つけたいところです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LocalNode 1.3.0 HTTPS not working as expected]]></title><description><![CDATA[1.3.0でHTTPS/TLS対応を追加しましたが、実際に使ってみると動かないケースがありました。 確認できた問題 macOS版：証明書のSAN解析に失敗してホスト名がドロップダウンに表示されない CLI版： /  を指定してもホスト名が使われず、QRコードやURLがIP…]]></description><link>https://koto2730.github.io/2026/04/13/</link><guid isPermaLink="false">https://koto2730.github.io/2026/04/13/</guid><pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;1.3.0でHTTPS/TLS対応を追加しましたが、実際に使ってみると動かないケースがありました。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;確認できた問題&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
